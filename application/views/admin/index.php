@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title><?php echo $title ?></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>asset/admin/css/bootstrap.min.css" rel="stylesheet">
@@ -46,13 +46,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/admin/homeadmin">Buku Tamu</a>
+                <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/admin/admin_c">Buku Tamu</a>
             </div>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Data Peserta </a>
+                        <a href="<?php echo base_url(); ?>index.php/admin/admin_c"><i class="fa fa-fw fa-table"></i> Data Peserta </a>
                     </li>
                 </ul>
             </div>
@@ -78,67 +78,79 @@
                 </div>
                 <!-- /.row -->
 
-                    <div class="col-lg-6">
-                        <h2>Bordered with Striped Rows</h2>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                <div class="col-lg-12">
+                    <h2>Bordered with Striped Rows</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Suami</th>
+                                    <th>Nama Isteri</th>
+                                    <th>Alamat</th>
+									<th>Jml Anak</th>
+									<th>No Telp</th>
+									<th>Bapak dr Suami</th>
+									<th>Ibu dr Suami</th>
+									<th>Bapak dr Isteri</th>
+									<th>Ibu dari Isteri</th>
+									<th>Jorong Suami</th>
+									<th>Jorong Isteri</th>
+									<th>Suku Suami</th>
+									<th>Suku Isteri</th>
+									<th>Photo</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+								<?php
+									foreach($peserta as $row){
+										$id_peserta=$row->id_peserta;
+										$nama_suami=$row->nama_suami;
+										$nama_istri=$row->nama_istri;
+										$jml_anak=$row->jml_anak;
+										$alamat=$row->alamat;
+										$no_telp=$row->no_telp;
+										$bapak_suami=$row->bapak_suami;
+										$ibu_suami=$row->ibu_suami;
+										$bapak_istri=$row->bapak_istri;
+										$ibu_istri=$row->ibu_istri;
+										$jorong_suami=$row->jorong_suami;
+										$jorong_istri=$row->jorong_istri;
+										$suku_suami=$row->suku_suami;
+										$suku_istri=$row->suku_istri;
+										$photo=$row->link_photo
+									
+								?>
+                                <tr>
+                                    <td><?php echo $id_peserta; ?></td>
+                                    <td><?php echo $nama_suami; ?></td>
+                                    <td><?php echo $nama_istri; ?></td>
+									<td><?php echo $alamat; ?></td>
+                                    <td>
+										Jumlah : <?php echo $jml_anak; ?>
+										<table>
+											<tr><td>1. </td><td>dasdsadas</td></tr>
+											<tr><td>2. </td><td>asrwe</td></tr>
+											<tr><td>3. </td><td>fghhgfh</td></tr>
+										</table>
+									</td>
+									<td><?php echo $no_telp; ?></td>
+									<td><?php echo $bapak_suami; ?></td>
+									<td><?php echo $ibu_suami; ?></td>
+									<td><?php echo $bapak_istri; ?></td>
+									<td><?php echo $ibu_istri; ?></td>
+									<td><?php echo $jorong_suami; ?></td>
+									<td><?php echo $jorong_istri; ?></td>
+									<td><?php echo $suku_suami; ?></td>
+									<td><?php echo $suku_istri; ?></td>
+									<td><?php echo $photo; ?></td>
+                                </tr>
+								<?php } ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <!-- /.row -->
 
             </div>
             <!-- /.container-fluid -->
