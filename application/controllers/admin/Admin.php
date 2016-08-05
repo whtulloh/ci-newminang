@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin_c extends CI_Controller {
+class Admin extends CI_Controller {
 	
 	function __construct()
 	{
@@ -31,7 +31,8 @@ class Admin_c extends CI_Controller {
 		$this->load->view('/admin/index',$data);
 	}
 	
-	function export_to_xl() {
+	function export_to_xl() 
+	{
 		$this->load->model('/admin/admin_m','admin_model');
 		
 		$data['excel'] = $this->admin_model->to_excel_all_m(); 

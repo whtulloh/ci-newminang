@@ -30,6 +30,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<style>
+		#mytable td{
+			text-overflow:ellipsis;
+			overflow:hidden;
+			white-space:nowrap;;
+		}
+	</style>
+	
 </head>
 
 <body>
@@ -86,7 +94,7 @@
 						</a>
 					</p>
                     <div class="table-responsive">
-                        <table class="table table-bordered table-hover table-striped">
+                        <table class="table table-bordered table-hover table-striped" id="mytable">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -98,7 +106,7 @@
 									<th>Bapak dr Suami</th>
 									<th>Ibu dr Suami</th>
 									<th>Bapak dr Isteri</th>
-									<th>Ibu dari Isteri</th>
+									<th>Ibu dr Isteri</th>
 									<th>Jorong Suami</th>
 									<th>Jorong Isteri</th>
 									<th>Suku Suami</th>
@@ -108,7 +116,10 @@
                             </thead>
 
                             <tbody>
-								<?php
+							<?php
+							if (empty($peserta)){
+								echo '<tr><td colspan=15>There is no data in here</td></tr>';
+							}else{								
 								foreach($peserta as $row){
 									$id_peserta=$row->id_peserta;
 									$nama_suami=$row->nama_suami;
@@ -156,7 +167,9 @@
 									<td><?php echo $suku_istri; ?></td>
 									<td><?php echo $photo; ?></td>
                                 </tr>
-								<?php } ?>
+							<?php 
+								} 
+							} ?>
                             </tbody>
                         </table>
 						<br />
@@ -172,7 +185,15 @@
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
-
+	
+	<script>
+		$(document).ready(function() {
+			$('#mytable').DataTable( {
+				"scrollX": true
+			} );
+		} );
+	</script>
+	
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>asset/admin/js/jquery.js"></script>
 
