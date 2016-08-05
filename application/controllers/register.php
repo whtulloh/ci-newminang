@@ -52,12 +52,39 @@ class Register extends CI_Controller {
 							'suku_istri'		=> $suku_istri,
 							'link_photo'		=> $data['full_path']
 						);
+				if ( $jorong_suami == 'other_this' ) {
+					$data['jorong_suami'] = $jorong_suami_other;
+				}
+				if ( $jorong_istri == 'other_this' ) {
+					$data['jorong_istri'] = $jorong_istri_other;
+				}
+				if ( $suku_suami == 'other_this' ) {
+					$data['suku_suami'] = $suku_suami_other;
+				}
+				if ( $suku_istri == 'other_this' ) {
+					$data['suku_istri'] = $suku_istri_other;
+				}
+
 				$reg_data	= $this->register_model->registration( $data );
 
 				if ( $reg_data ) {
 					$data = array('nama_suami' => $nama_suami,'nama_istri' => $nama_istri );
 					$result = $this->register_model->get_data( $data );
-					print_r( $result );
+					if ( !empty($anak1) ) {
+						$rs = $this->register_model->insert_anak( $result, $anak1 );
+					}
+					if( !empty($anak2) ) {
+						$rs = $this->register_model->insert_anak( $result, $anak2 );
+					}
+					if ( !empty($anak3) ) {
+						$rs = $this->register_model->insert_anak( $result, $anak3 );
+					}
+					if ( !empty($anak4) ) {
+						$rs = $this->register_model->insert_anak( $result, $anak4 );
+					}
+					if (!empty($anak5) ) {
+						$rs = $this->register_model->insert_anak( $result, $anak5 );
+					}
 				}
 				
 				if ( $reg_data == TRUE) {

@@ -88,21 +88,21 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Suami <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="first-name" name="nama_suami" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="first-name" name="nama_suami"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nama Istri <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="nama_istri" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="nama_istri"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jumlah Anak <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="jml_anak" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="jml_anak"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -110,7 +110,7 @@
                                             <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 1<span class="required">*</span>
                                             </label>
                                             <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak1" required="required" class="form-control">
+                                                <input type="text" id="last-name" name="anak1"  class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -118,7 +118,7 @@
                                             <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 2<span class="required">*</span>
                                             </label>
                                             <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak2" required="required" class="form-control">
+                                                <input type="text" id="last-name" name="anak2"  class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -126,7 +126,7 @@
                                             <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 3<span class="required">*</span>
                                             </label>
                                             <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak3" required="required" class="form-control">
+                                                <input type="text" id="last-name" name="anak3"  class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -134,7 +134,7 @@
                                             <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 4<span class="required">*</span>
                                             </label>
                                             <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak4" required="required" class="form-control">
+                                                <input type="text" id="last-name" name="anak4"  class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -142,49 +142,49 @@
                                             <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 5<span class="required">*</span>
                                             </label>
                                             <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak5" required="required" class="form-control">
+                                                <input type="text" id="last-name" name="anak5"  class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Alamat <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="alamat" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="alamat"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">No Telephone <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="no_telp" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="no_telp"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Suami <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="bapak_suami" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="bapak_suami"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Ibu Dari Suami <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="ibu_suami" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="ibu_suami"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="bapak_istri" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="bapak_istri"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="ibu_istri" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="last-name" name="ibu_istri"  class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -213,9 +213,9 @@
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="jorong_suami"></div>
+                                                        <div class="col-md-1"><input type="radio" class="flat" name="jorong_suami" value="other_this" ></div>
                                                         <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                            <input type="text" id="last-name" name="jorong_suami_other"  class="form-control col-md-7 col-xs-12" >
                                                         </div>
                                                     </label>
                                                 </div>
@@ -247,9 +247,9 @@
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="jorong_istri"></div>
+                                                        <div class="col-md-1"><input type="radio" class="flat" name="jorong_istri" value="other_this"></div>
                                                         <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                            <input type="text" id="last-name" name="jorong_istri_other"  class="form-control col-md-7 col-xs-12">
                                                         </div>
                                                     </label>
                                                 </div>
@@ -286,9 +286,9 @@
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="suku_suami"></div>
+                                                        <div class="col-md-1"><input type="radio" class="flat" name="suku_suami" value="other_this"></div>
                                                         <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                            <input type="text" id="last-name" name="suku_suami_other"  class="form-control col-md-7 col-xs-12">
                                                         </div>
                                                     </label>
                                                 </div>
@@ -325,9 +325,9 @@
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="suku_istri"></div>
+                                                        <div class="col-md-1"><input type="radio" class="flat" name="suku_istri" value="other_this"></div>
                                                         <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                            <input type="text" id="last-name" name="suku_istri_other"  class="form-control col-md-7 col-xs-12">
                                                         </div>
                                                     </label>
                                                 </div>
@@ -337,7 +337,7 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Foto <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="file" id="last-name" name="userfile" required="required" >
+                                                <input type="file" id="last-name" name="userfile"  >
                                             </div>
                                         </div>
 
