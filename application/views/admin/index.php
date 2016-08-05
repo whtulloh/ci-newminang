@@ -79,7 +79,12 @@
                 <!-- /.row -->
 
                 <div class="col-lg-12">
-                    <p>Jumlah Peserta : <?php echo $jml_peserta; ?><a href='<?php echo base_url(); ?>index.php/admin/admin_c/export_to_xl'><button style='color:green;'>Export All Data</button></a></p>
+                    <p>
+						<button>Total Peserta : <?php echo $jml_peserta; ?></button> 
+						<a href='<?php echo base_url(); ?>index.php/admin/admin_c/export_to_xl'>
+							<button style='color:green;'>Export All Data</button>
+						</a>
+					</p>
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover table-striped">
                             <thead>

@@ -29,8 +29,7 @@ final class admin_m extends CI_Model
 	}
 	
 	function get_total_record_m() {
-        $this->db->get('pesertas');
-        return $this->db->count_all_results();
+        return $this->db->count_all_results('peserta');
     }
 	
 	public function getanak_by_parent_m( $peserta_id )
