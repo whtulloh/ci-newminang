@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentellela Alela! | </title>
+    <title> Registerasi </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -79,6 +79,16 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
+                                    <br />
+                                    <?php
+                                        if( isset($flashdata) ) {
+                                    ?>
+                                        <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                                            </button>
+                                            <strong>Registraion</strong><?php echo $flashdata; ?>
+                                        </div>
+                                    <?php } ?>
                                     <br />
                                     <?php if(isset($error) ) { echo $error; } ?>
                                     <?php echo form_open_multipart('register/api_reg', array('id' => 'demo-form2', 'class' => 'form-horizontal form-label-left') ) ?>

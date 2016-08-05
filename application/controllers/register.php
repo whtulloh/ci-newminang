@@ -23,7 +23,7 @@ class Register extends CI_Controller {
 			$config['max_size']	= '1000';
 			$config['max_width']  = '1024';
 			$config['max_height']  = '768';
-			
+
 			$this->load->library('upload', $config);
 			//$error = array('error' => $this->upload->display_errors());
 			$data = $this->upload->data();
@@ -88,9 +88,9 @@ class Register extends CI_Controller {
 			}
 			
 			if ( $reg_data == TRUE) {
-				$param = array('flashdata' => 'Registraion Success !!', );
+				$param = array('flashdata' => ' Success !!', );
 			}else{
-				$param = array('flashdata' => 'Registraion Failed !!', );
+				$param = array('flashdata' => ' Failed !!', );
 			}
 			$this->load->view("register", $param );
 		}
