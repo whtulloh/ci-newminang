@@ -61,291 +61,291 @@
                             <div class="x_panel">
                                 <div class="x_title">
                                     <h2>Buku Tamu Halal Bihalal Padang Gantiang 2016</h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
+                                    
                                     <div class="clearfix"></div>
                                 </div>
-                                <div class="x_content">
-                                    <br />
-                                    <?php
-                                        if( isset($flashdata) ) {
-                                    ?>
-                                        <div class="alert alert-success alert-dismissible fade in" role="alert">
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
-                                            </button>
-                                            <strong>Registraion</strong><?php echo $flashdata; ?>
-                                        </div>
-                                    <?php } ?>
-                                    <br />
-                                    <?php if(isset($error) ) { echo $error; } ?>
-                                    <?php echo form_open_multipart('register/api_reg', array('id' => 'demo-form2', 'class' => 'form-horizontal form-label-left') ) ?>
-                                    <!-- <form method="POST" action="<?php echo site_url('register/api_reg') ;?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left"> -->
+							</div>
+                            <div class="x_content">
+                                <br />
+                                <?php
+                                    if( isset($flashdata) ) {
+                                ?>
+                                    <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                                        </button>
+                                        <strong>Registraion</strong><?php echo $flashdata; ?>
+                                    </div>
+                                <?php } ?>
+                                <br />
+                                <?php if(isset($error) ) { echo $error; } ?>
+                                <?php echo form_open_multipart('register/api_reg', array('id' => 'demo-form2', 'class' => 'form-horizontal form-label-left') ) ?>
+                                <!-- <form method="POST" action="<?php echo site_url('register/api_reg') ;?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left"> -->
 
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Suami </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="first-name" name="nama_suami"  class="form-control col-md-7 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Suami <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="first-name" name="nama_suami"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nama Istri <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="nama_istri"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jumlah Anak <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="jml_anak"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3"></div>
+                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 1<span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-5 col-sm-5">
+                                            <input type="text" id="last-name" name="anak1"  class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3"></div>
+                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 2<span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-5 col-sm-5">
+                                            <input type="text" id="last-name" name="anak2"  class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3"></div>
+                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 3<span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-5 col-sm-5">
+                                            <input type="text" id="last-name" name="anak3"  class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3"></div>
+                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 4<span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-5 col-sm-5">
+                                            <input type="text" id="last-name" name="anak4"  class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3"></div>
+                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 5<span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-5 col-sm-5">
+                                            <input type="text" id="last-name" name="anak5"  class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Alamat <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="alamat"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">No Telephone <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="no_telp"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Suami <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="bapak_suami"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Ibu Dari Suami <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="ibu_suami"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="bapak_istri"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="ibu_istri"  class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jorong Suami <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_suami" value="Koto Alam"> Koto Alam
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_suami" value="Koto Gadang"> Koto Gadang
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_suami" value="Koto Gadang Hilir"> Koto Gadang Hilir
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_suami" value=""> Rajo Dani
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <div class="col-md-1"><input type="radio" class="flat" name="jorong_suami" value="other_this" ></div>
+                                                    <div class="col-md-11">
+                                                        <input type="text" id="last-name" name="jorong_suami_other"  class="form-control col-md-7 col-xs-12" >
+                                                    </div>
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nama Istri </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="nama_istri"  class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jorong Istri <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_istri" value="Koto Alam"> Koto Alam
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_istri" value="Koto Gadang"> Koto Gadang
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_istri" value="Koto Gadang Hilir"> Koto Gadang Hilir
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="jorong_istri" value="Rajo Dani"> Rajo Dani
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <div class="col-md-1"><input type="radio" class="flat" name="jorong_istri" value="other_this"></div>
+                                                    <div class="col-md-11">
+                                                        <input type="text" id="last-name" name="jorong_istri_other"  class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jumlah Anak </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="jml_anak"  class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Suku Suami <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_suami" value="Chaniago"> Chaniago
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_suami" value="Sembilan"> Sembilan
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_suami" value="Kutianyir"> Kutianyir
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_suami" value="Tujuh"> Tujuh
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_suami" value="Rajo Dani"> Rajo Dani
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <div class="col-md-1"><input type="radio" class="flat" name="suku_suami" value="other_this"></div>
+                                                    <div class="col-md-11">
+                                                        <input type="text" id="last-name" name="suku_suami_other"  class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3"></div>
-                                            <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 1
-                                            </label>
-                                            <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak1"  class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Suku Istri <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_istri" value="Chaniago"> Chaniago
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_istri" value="Sembilan"> Sembilan
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_istri" value="Kutianyir"> Kutianyir
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_istri" value="Tujuh"> Tujuh
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" class="flat" name="suku_istri" value="Rajo Dani"> Rajo Dani
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <div class="col-md-1"><input type="radio" class="flat" name="suku_istri" value="other_this"></div>
+                                                    <div class="col-md-11">
+                                                        <input type="text" id="last-name" name="suku_istri_other"  class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3"></div>
-                                            <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 2
-                                            </label>
-                                            <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak2"  class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Foto <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="file" id="last-name" name="userfile"  >
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3"></div>
-                                            <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 3
-                                            </label>
-                                            <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak3"  class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3"></div>
-                                            <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 4
-                                            </label>
-                                            <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak4"  class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3"></div>
-                                            <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 5
-                                            </label>
-                                            <div class="col-md-5 col-sm-5">
-                                                <input type="text" id="last-name" name="anak5"  class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Alamat </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="alamat"  class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">No Telephone </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="no_telp"  class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Suami </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="bapak_suami"  class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Ibu Dari Suami </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="ibu_suami"  class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="bapak_istri"  class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Ibu Dari Istri </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="ibu_istri"  class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jorong Suami </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_suami" value="Koto Alam"> Koto Alam
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_suami" value="Koto Gadang"> Koto Gadang
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_suami" value="Koto Gadang Hilir"> Koto Gadang Hilir
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_suami" value=""> Rajo Dani
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="jorong_suami" value="other_this" ></div>
-                                                        <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="jorong_suami_other"  class="form-control col-md-7 col-xs-12" >
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jorong Istri </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_istri" value="Koto Alam"> Koto Alam
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_istri" value="Koto Gadang"> Koto Gadang
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_istri" value="Koto Gadang Hilir"> Koto Gadang Hilir
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="jorong_istri" value="Rajo Dani"> Rajo Dani
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="jorong_istri" value="other_this"></div>
-                                                        <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="jorong_istri_other"  class="form-control col-md-7 col-xs-12">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Suku Suami </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_suami" value="Chaniago"> Chaniago
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_suami" value="Sembilan"> Sembilan
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_suami" value="Kutianyir"> Kutianyir
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_suami" value="Tujuh"> Tujuh
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_suami" value="Rajo Dani"> Rajo Dani
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="suku_suami" value="other_this"></div>
-                                                        <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="suku_suami_other"  class="form-control col-md-7 col-xs-12">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Suku Istri </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_istri" value="Chaniago"> Chaniago
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_istri" value="Sembilan"> Sembilan
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_istri" value="Kutianyir"> Kutianyir
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_istri" value="Tujuh"> Tujuh
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" class="flat" name="suku_istri" value="Rajo Dani"> Rajo Dani
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label>
-                                                        <div class="col-md-1"><input type="radio" class="flat" name="suku_istri" value="other_this"></div>
-                                                        <div class="col-md-11">
-                                                            <input type="text" id="last-name" name="suku_istri_other"  class="form-control col-md-7 col-xs-12">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Foto </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="file" id="last-name" name="userfile"  >
-                                            </div>
-                                        </div>
+                                    </div>
 
-                                        <div class="ln_solid"></div>
-                                        <div class="form-group">
-                                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                                <input type="submit" name="submiten" class="btn btn-success" value="Submit">
-                                            </div>
+                                    <div class="ln_solid"></div>
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                            <input type="submit" name="submiten" class="btn btn-success" value="Submit">
                                         </div>
+                                    </div>
 
-                                    </form>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
