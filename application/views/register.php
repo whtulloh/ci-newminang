@@ -80,7 +80,9 @@
                                 </div>
                                 <div class="x_content">
                                     <br />
-                                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                    <?php if(isset($error) ) { echo $error; } ?>
+                                    <?php echo form_open_multipart('register/api_reg', array('id' => 'demo-form2', 'class' => 'form-horizontal form-label-left') ) ?>
+                                    <!-- <form method="POST" action="<?php echo site_url('register/api_reg') ;?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left"> -->
 
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Suami <span class="required">*</span>
@@ -335,14 +337,14 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Foto <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="file" id="last-name" name="last-name" required="required" >
+                                                <input type="file" id="last-name" name="userfile" required="required" >
                                             </div>
                                         </div>
 
                                         <div class="ln_solid"></div>
                                         <div class="form-group">
                                             <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                                <input type="submit" class="btn btn-success" value="Submit">
+                                                <input type="submit" name="submiten" class="btn btn-success" value="Submit">
                                             </div>
                                         </div>
 
