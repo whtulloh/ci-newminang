@@ -5,32 +5,36 @@ class Admin_c extends CI_Controller {
 	
 	function __construct()
 	{
-        parent::__construct();
+        parent::__construct();		
     }
 	
 	function index() 
 	{
 		$this->load->model('/admin/admin_m','admin_model');
 		
-		$data['title']='Buku Tamu Halal Bihalal Padang Gantiang 2016';
-		$data['peserta']=$this->admin_model->getpeserta();
+		$jml_peserta = $this->admin_model->get_total_record_m();
+		
+		$config['base_url'] = base_url().'index.php/user/index/';
+        $config['total_rows'] = $jml_peserta;
+        $config['per_page'] = 25;
+        $config['uri_segment'] = 3;
+        $this->pagination->initialize($config);
+		
+		$start = $this->uri->segment(3, 0);
+        $peserta = $this->admin_model->getpeserta_m($config['per_page'],$start);
+		
+		$data['title'] = 'Buku Tamu Halal Bihalal Padang Gantiang 2016';
+		$data['jml_peserta'] = $jml_peserta;
+		$data['pagination'] = $this->pagination->create_links();
+		$data['peserta'] = $peserta;
 		
 		$this->load->view('/admin/index',$data);
 	}
 	
-	function getAnak($pesertaid)
-	{
+	function export_to_xl() {
+		$this->load->model('/admin/admin_m','admin_model');
 		
+		$data['excel'] = $this->admin_model->to_excel_all_m(); 
+		$this->load->view('/admin/excel_v',$data);
 	}
 }
-
-
-#		$this->load->database();   //memanggil pengaturan database dan mengaktifkannya
-#       $this->load->model('m_data_produk');  //memanggil model m_data_produk
-#       $data['data_produk'] = $this->m_data_produk->list_data();//memanggil fungsi di model dan menerima hasil fungsi yang dimasukan ke $data['data_produk']
-#       $this->load->view('v_data_produk',$data);//memanggil view yang nanti kita akan buat dan memasukan $data dari model tadi
-		
-#		$data['title'] = 'CRUD CodeIgniter Studi Kasus Barang'; //judul title
-#       $data['qbarang'] = $this->mbarang->get_allbarang(); //model semua barang
- 
-#       $this->load->view('vbarang',$data); //load views vbarang

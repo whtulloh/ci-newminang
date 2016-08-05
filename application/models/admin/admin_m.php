@@ -8,9 +8,35 @@ final class admin_m extends CI_Model
     	parent::__construct();
 	}
 
-	public function getpeserta( )
+	public function getpeserta_m($limit, $start = 0)
 	{
+        $this->db->order_by('id_peserta', 'DESC');
+        $this->db->limit($limit, $start);
 		$query = $this->db->get('peserta')->result();
+		$return = array();
+
+		foreach ($query as $peserta)
+		{
+			$return[$peserta->id_peserta] = $peserta;
+			$return[$peserta->id_peserta]->anak = $this->getanak_by_parent_m($peserta->id_peserta);
+		}
+
+		if ($query) {
+			return $return;
+		} else{
+			return FALSE;
+		}
+	}
+	
+	function get_total_record_m() {
+        $this->db->get('pesertas');
+        return $this->db->count_all_results();
+    }
+	
+	public function getanak_by_parent_m( $peserta_id )
+	{
+        $this->db->where('anak.id_peserta', $peserta_id);
+        $query = $this->db->get('anak')->result();
 		if ($query) {
 			return $query;
 		} else{
@@ -18,13 +44,19 @@ final class admin_m extends CI_Model
 		}
 	}
 	
-	public function getanak_byparent( $parent_id )
-	{
-		$this->db->select('*');
-        $this->db->where('id_peserta', $parent_id);
-        $query = $this->db->get('anak');
+	//query for get all data
+	function to_excel_all_m() {
+		$query = $this->db->get('peserta')->result();
+		$return = array();
+
+		foreach ($query as $peserta)
+		{
+			$return[$peserta->id_peserta] = $peserta;
+			$return[$peserta->id_peserta]->anak = $this->getanak_by_parent_m($peserta->id_peserta);
+		}
+
 		if ($query) {
-			return $query;
+			return $return;
 		} else{
 			return FALSE;
 		}

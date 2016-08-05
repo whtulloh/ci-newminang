@@ -27,6 +27,6 @@ CREATE TABLE anak (
 	reg_date TIMESTAMP
 );
 
-INSERT INTO `newminang`.`peserta` (`id_peserta`, `nama_suaimi`, `nama_istri`, `jml_anak`, `alamat`, `no_telp`, `bapak_suami`, `ibu_suami`, `bapak_istri`, `ibu_istri`, `jorong_suami`, `joring_istri`, `suku_suami`, `suku_istri`, `link_photo`, `reg_date`) VALUES (NULL, 'test', 'test', '3', 'test', '123124123412', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', CURRENT_TIMESTAMP);
+INSERT INTO `newminang`.`peserta` (`id_peserta`, `nama_suami`, `nama_istri`, `jml_anak`, `alamat`, `no_telp`, `bapak_suami`, `ibu_suami`, `bapak_istri`, `ibu_istri`, `jorong_suami`, `jorong_istri`, `suku_suami`, `suku_istri`, `link_photo`, `reg_date`) VALUES (NULL, 'tests', 'testss', '2', 'testdas', '43553634535', 'testasdas', 'testdadas', 'testdsadas', 'testdsadas', 'testdsadas', 'testdsadas', 'testdsadas', 'testdsadas', 'testdsadas', CURRENT_TIMESTAMP)
 
 INSERT INTO `newminang`.`anak` (`id_anak`, `id_peserta`, `nama_anak`, `reg_date`) VALUES (NULL, '1', 'test', CURRENT_TIMESTAMP);

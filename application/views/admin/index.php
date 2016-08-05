@@ -79,7 +79,7 @@
                 <!-- /.row -->
 
                 <div class="col-lg-12">
-                    <h2>Bordered with Striped Rows</h2>
+                    <p>Jumlah Peserta : <?php echo $jml_peserta; ?><a href='<?php echo base_url(); ?>index.php/admin/admin_c/export_to_xl'><button style='color:green;'>Export All Data</button></a></p>
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover table-striped">
                             <thead>
@@ -104,23 +104,22 @@
 
                             <tbody>
 								<?php
-									foreach($peserta as $row){
-										$id_peserta=$row->id_peserta;
-										$nama_suami=$row->nama_suami;
-										$nama_istri=$row->nama_istri;
-										$jml_anak=$row->jml_anak;
-										$alamat=$row->alamat;
-										$no_telp=$row->no_telp;
-										$bapak_suami=$row->bapak_suami;
-										$ibu_suami=$row->ibu_suami;
-										$bapak_istri=$row->bapak_istri;
-										$ibu_istri=$row->ibu_istri;
-										$jorong_suami=$row->jorong_suami;
-										$jorong_istri=$row->jorong_istri;
-										$suku_suami=$row->suku_suami;
-										$suku_istri=$row->suku_istri;
-										$photo=$row->link_photo
-									
+								foreach($peserta as $row){
+									$id_peserta=$row->id_peserta;
+									$nama_suami=$row->nama_suami;
+									$nama_istri=$row->nama_istri;
+									$jml_anak=$row->jml_anak;
+									$alamat=$row->alamat;
+									$no_telp=$row->no_telp;
+									$bapak_suami=$row->bapak_suami;
+									$ibu_suami=$row->ibu_suami;
+									$bapak_istri=$row->bapak_istri;
+									$ibu_istri=$row->ibu_istri;
+									$jorong_suami=$row->jorong_suami;
+									$jorong_istri=$row->jorong_istri;
+									$suku_suami=$row->suku_suami;
+									$suku_istri=$row->suku_istri;
+									$photo=$row->link_photo
 								?>
                                 <tr>
                                     <td><?php echo $id_peserta; ?></td>
@@ -130,9 +129,15 @@
                                     <td>
 										Jumlah : <?php echo $jml_anak; ?>
 										<table>
-											<tr><td>1. </td><td>dasdsadas</td></tr>
-											<tr><td>2. </td><td>asrwe</td></tr>
-											<tr><td>3. </td><td>fghhgfh</td></tr>
+											<?php
+											if(!empty($row->anak)) {
+												$i=0;
+												foreach ($row->anak as $anak)  {
+													$i++;
+													echo '<tr><td> '.$i.'. </td><td> '.$anak->nama_anak.' </td></tr>';
+												}
+											}
+											?>
 										</table>
 									</td>
 									<td><?php echo $no_telp; ?></td>
@@ -149,6 +154,10 @@
 								<?php } ?>
                             </tbody>
                         </table>
+						<br />
+						<?php 
+							echo $pagination;
+						?>
                     </div>
                 </div>
 
