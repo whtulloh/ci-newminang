@@ -33,7 +33,7 @@ class Register extends CI_Controller {
 						'id_peserta' 		=> '',
 						'nama_suami' 		=> $nama_suami,
 						'nama_istri' 		=> $nama_istri,
-						'alamat' 			=> $alamat,
+						'alamat' 			=> $alamat.','.$kota,
 						'no_telp' 			=> $no_telp,
 						'bapak_suami' 		=> $bapak_suami,
 						'ibu_suami'			=> $ibu_suami,
@@ -86,6 +86,12 @@ class Register extends CI_Controller {
 					$rs = $this->register_model->insert_anak( $result, $anak5 );
 				}if (!empty($anak6) ) {
 					$rs = $this->register_model->insert_anak( $result, $anak6 );
+				}if (!empty($anak7) ) {
+					$rs = $this->register_model->insert_anak( $result, $anak7 );
+				}if (!empty($anak8) ) {
+					$rs = $this->register_model->insert_anak( $result, $anak8 );
+				}if (!empty($anak9) ) {
+					$rs = $this->register_model->insert_anak( $result, $anak9 );
 				}
 			}
 			

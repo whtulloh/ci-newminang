@@ -78,6 +78,7 @@
 						</fieldset>
 
 						<fieldset>
+							<label class="label" style="font-size:125%"><b>Nama anak, mohon diisi seperlunya.</b></label>
 							<div class="row">
 								<section class="col col-4">
 									<label class="input">
@@ -120,6 +121,29 @@
 									<label class="input">
 										<i class="icon-prepend fa fa-child"></i>
 										<input type="text" name="anak6" placeholder="Nama Anak 6">
+									</label>
+								</section>
+							</div>
+							
+							<div class="row">
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak7" placeholder="Nama Anak 7">
+									</label>
+								</section>
+
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak8" placeholder="Nama Anak 8">
+									</label>
+								</section>
+								
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak9" placeholder="Nama Anak 9">
 									</label>
 								</section>
 							</div>

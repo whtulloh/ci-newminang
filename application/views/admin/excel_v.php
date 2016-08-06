@@ -41,7 +41,6 @@ header("Expires: 0");
 			$id_peserta=$row->id_peserta;
 			$nama_suami=$row->nama_suami;
 			$nama_istri=$row->nama_istri;
-			$jml_anak=$row->jml_anak;
 			$alamat=$row->alamat;
 			$no_telp=$row->no_telp;
 			$bapak_suami=$row->bapak_suami;
