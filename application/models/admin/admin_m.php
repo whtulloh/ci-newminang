@@ -19,6 +19,7 @@ final class Admin_m extends CI_Model
 		{
 			$return[$peserta->id_peserta] = $peserta;
 			$return[$peserta->id_peserta]->anak = $this->getanak_by_parent_m($peserta->id_peserta);
+			$return[$peserta->id_peserta]->jmlanak=$this->countanak_by_parent_m($peserta->id_peserta);
 		}
 
 		if ($query) {
@@ -28,7 +29,7 @@ final class Admin_m extends CI_Model
 		}
 	}
 	
-	function get_total_record_m() {
+	function countpeserta_m() {
         return $this->db->count_all_results('peserta');
     }
 	
@@ -43,6 +44,12 @@ final class Admin_m extends CI_Model
 		}
 	}
 	
+	public function countanak_by_parent_m( $peserta_id )
+	{
+        $this->db->where('anak.id_peserta', $peserta_id);
+		return $this->db->count_all_results('anak');
+	}
+	
 	//query for get all data
 	function to_excel_all_m() {
 		$query = $this->db->get('peserta')->result();
@@ -52,6 +59,7 @@ final class Admin_m extends CI_Model
 		{
 			$return[$peserta->id_peserta] = $peserta;
 			$return[$peserta->id_peserta]->anak = $this->getanak_by_parent_m($peserta->id_peserta);
+			$return[$peserta->id_peserta]->jmlanak=$this->countanak_by_parent_m($peserta->id_peserta);
 		}
 
 		if ($query) {

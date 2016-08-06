@@ -12,16 +12,16 @@
     <title><?php echo $title ?></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo base_url(); ?>asset/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/admin/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?php echo base_url(); ?>asset/admin/css/sb-admin.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/admin/css/sb-admin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="<?php echo base_url(); ?>asset/admin/css/plugins/morris.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/admin/css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?php echo base_url(); ?>asset/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>assets/admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +31,7 @@
     <![endif]-->
 
 	<style>
-		#mytable td{
+		#mytable td, #mytable th{
 			text-overflow:ellipsis;
 			overflow:hidden;
 			white-space:nowrap;;
@@ -89,7 +89,7 @@
                 <div class="col-lg-12">
                     <p>
 						<button>Total Peserta : <?php echo $jml_peserta; ?></button> 
-						<a href='<?php echo base_url(); ?>index.php/admin/admin_c/export_to_xl'>
+						<a href='<?php echo base_url(); ?>admin/Admin/export_to_xl'>
 							<button style='color:green;'>Export All Data</button>
 						</a>
 					</p>
@@ -143,7 +143,7 @@
                                     <td><?php echo $nama_istri; ?></td>
 									<td><?php echo $alamat; ?></td>
                                     <td>
-										Jumlah : <?php echo $jml_anak; ?>
+										Jumlah : <?php echo $row->jmlanak; ?>
 										<table>
 											<?php
 											if(!empty($row->anak)) {
@@ -195,15 +195,15 @@
 	</script>
 	
     <!-- jQuery -->
-    <script src="<?php echo base_url(); ?>asset/admin/js/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>assets/admin/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="<?php echo base_url(); ?>asset/admin/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/admin/js/bootstrap.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="<?php echo base_url(); ?>asset/admin/js/plugins/morris/raphael.min.js"></script>
-    <script src="<?php echo base_url(); ?>asset/admin/js/plugins/morris/morris.min.js"></script>
-    <script src="<?php echo base_url(); ?>asset/admin/js/plugins/morris/morris-data.js"></script>
+    <script src="<?php echo base_url(); ?>assets/admin/js/plugins/morris/raphael.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/admin/js/plugins/morris/morris.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/admin/js/plugins/morris/morris-data.js"></script>
 
 </body>
 

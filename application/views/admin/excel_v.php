@@ -4,7 +4,14 @@ header("Content-Disposition: attachment; filename=exceldata.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 ?>
-<table border='1' width="70%">
+<style>
+	#mytable td, #mytable th{
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;;
+	}
+	</style>
+<table border='1' width="70%" id="mytable">
 	<thead>
 		<tr>
 			<th>No</th>
@@ -26,7 +33,10 @@ header("Expires: 0");
 	</thead>
 
 	<tbody>
-		<?php
+	<?php
+	if (empty($excel)){
+		echo '<tr><td colspan=15>There is no data in here</td></tr>';
+	}else{	
 		foreach($excel as $row){
 			$id_peserta=$row->id_peserta;
 			$nama_suami=$row->nama_suami;
@@ -43,14 +53,14 @@ header("Expires: 0");
 			$suku_suami=$row->suku_suami;
 			$suku_istri=$row->suku_istri;
 			$photo=$row->link_photo
-		?>
+	?>
 		<tr>
 			<td><?php echo $id_peserta; ?></td>
 			<td><?php echo $nama_suami; ?></td>
 			<td><?php echo $nama_istri; ?></td>
 			<td><?php echo $alamat; ?></td>
 			<td>
-				Jumlah : <?php echo $jml_anak; ?>
+				Jumlah : <?php echo $row->jmlanak; ?>
 				<table>
 					<?php
 					if(!empty($row->anak)) {
@@ -74,6 +84,8 @@ header("Expires: 0");
 			<td><?php echo $suku_istri; ?></td>
 			<td><?php echo $photo; ?></td>
 		</tr>
-		<?php } ?>
+	<?php 
+		}
+	} ?>
 	</tbody>
 </table>

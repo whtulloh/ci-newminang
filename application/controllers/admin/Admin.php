@@ -12,11 +12,11 @@ class Admin extends CI_Controller {
 	{
 		$this->load->model('/admin/admin_m','admin_model');
 		
-		$jml_peserta = $this->admin_model->get_total_record_m();
+		$jml_peserta = $this->admin_model->countpeserta_m();
 		
 		$config['base_url'] = base_url().'index.php/user/index/';
         $config['total_rows'] = $jml_peserta;
-        $config['per_page'] = 25;
+        $config['per_page'] = 5;
         $config['uri_segment'] = 3;
         $this->pagination->initialize($config);
 		

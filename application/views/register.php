@@ -14,27 +14,27 @@
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
 
 	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
 
 	<!-- CSS Header and Footer -->
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/headers/header-default.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/footers/footer-v1.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/headers/header-default.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/footers/footer-v1.css">
 
 	<!-- CSS Implementing Plugins -->
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/animate.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/line-icons/line-icons.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
-	<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
 	<!-- CSS Theme -->
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/theme-colors/default.css" id="style_color">
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/theme-skins/dark.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/theme-skins/dark.css">
 
 	<!-- CSS Customization -->
-	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/custom.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/custom.css">
 	
 </head>
 
@@ -186,7 +186,7 @@
 								<section class="col col-6">
 									<label class="label" style="font-size:125%"><b>Jorong Suami</b></label>
 									<div class="inline-group">
-										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Alam" checked><i class="rounded-x"></i>Koto Alam</label>
+										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Alam"><i class="rounded-x"></i>Koto Alam</label>
 										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Gadang"><i class="rounded-x"></i>Koto Gadang</label>
 										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Gadang Hilir"><i class="rounded-x"></i>Koto Gadang Hilir</label>
 										<label class="radio"><input type="radio" name="jorong_suami" value="Rajo Dani"><i class="rounded-x"></i>Rajo Dani</label>
@@ -200,7 +200,7 @@
 								<section class="col col-6">
 									<label class="label" style="font-size:125%"><b>Jorong Istri</b></label>
 									<div class="inline-group">
-										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Alam" checked><i class="rounded-x"></i>Koto Alam</label>
+										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Alam"><i class="rounded-x"></i>Koto Alam</label>
 										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Gadang"><i class="rounded-x"></i>Koto Gadang</label>
 										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Gadang Hilir"><i class="rounded-x"></i>Koto Gadang Hilir</label>
 										<label class="radio"><input type="radio" name="jorong_istri" value="Rajo Dani"><i class="rounded-x"></i>Rajo Dani</label>
@@ -216,7 +216,7 @@
 								<section class="col col-6">
 									<label class="label" style="font-size:125%"><b>Suku Suami</b></label>
 									<div class="inline-group">
-										<label class="radio"><input type="radio" name="suku_suami" value="Chaniago" checked><i class="rounded-x"></i>Chaniago</label>
+										<label class="radio"><input type="radio" name="suku_suami" value="Chaniago"><i class="rounded-x"></i>Chaniago</label>
 										<label class="radio"><input type="radio" name="suku_suami" value="Sembilan"><i class="rounded-x"></i>Sembilan</label>
 										<label class="radio"><input type="radio" name="suku_suami" value="Kutianyir"><i class="rounded-x"></i>Kutianyir</label>
 										<label class="radio"><input type="radio" name="suku_suami" value="Tujuh"><i class="rounded-x"></i>Tujuh</label>
@@ -231,7 +231,7 @@
 								<section class="col col-6">
 									<label class="label" style="font-size:125%"><b>Suku Istri</b></label>
 									<div class="inline-group">
-										<label class="radio"><input type="radio" name="suku_istri" value="Chaniago" checked><i class="rounded-x"></i>Chaniago</label>
+										<label class="radio"><input type="radio" name="suku_istri" value="Chaniago"><i class="rounded-x"></i>Chaniago</label>
 										<label class="radio"><input type="radio" name="suku_istri" value="Sembilan"><i class="rounded-x"></i>Sembilan</label>
 										<label class="radio"><input type="radio" name="suku_istri" value="Kutianyir"><i class="rounded-x"></i>Kutianyir</label>
 										<label class="radio"><input type="radio" name="suku_istri" value="Tujuh"><i class="rounded-x"></i>Tujuh</label>
@@ -273,24 +273,24 @@
 	</div><!--/End Wrapepr-->
 
 	<!-- JS Global Compulsory -->
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/jquery/jquery-migrate.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/back-to-top.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/smoothScroll.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/plugins/smoothScroll.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
 	<!-- JS Customization -->
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/custom.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/custom.js"></script>
 	<!-- JS Page Level -->
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/app.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/forms/order.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/forms/review.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/forms/checkout.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/app.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/forms/order.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/forms/review.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/forms/checkout.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
@@ -301,14 +301,14 @@
 		});
 	</script>
 <!--[if lt IE 9]>
-	<script src="<?php echo base_url();?>/assets/plugins/respond.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/html5shiv.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/placeholder-IE-fixes.js"></script>
-	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/respond.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/html5shiv.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
 	<![endif]-->
 
 <!--[if lt IE 10]>
-	<script src="<?php echo base_url();?>/assets/plugins/sky-forms/version-2.0.1/js/jquery.placeholder.min.js"></script>
+	<script src="<?php echo base_url();?>assets/plugins/sky-forms/version-2.0.1/js/jquery.placeholder.min.js"></script>
 	<![endif]-->
 
 </body>
