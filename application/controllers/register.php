@@ -18,11 +18,11 @@ class Register extends CI_Controller {
 		if ( !isset($_POST['submiten']) ) {
 			redirect('register');
 		}else{
-			$config['upload_path'] = 'asset/img/';
+			$config['upload_path'] = 'assets/image/';
 			$config['allowed_types'] = 'gif|jpg|png';
 			$config['max_size']	= '1000';
 			$config['max_width']  = '1024';
-			$config['max_height']  = '768';
+			$config['max_height']  = '1024';
 
 			$this->load->library('upload', $config);
 			//$error = array('error' => $this->upload->display_errors());
@@ -33,7 +33,6 @@ class Register extends CI_Controller {
 						'id_peserta' 		=> '',
 						'nama_suami' 		=> $nama_suami,
 						'nama_istri' 		=> $nama_istri,
-						'jml_anak' 			=> $jml_anak,
 						'alamat' 			=> $alamat,
 						'no_telp' 			=> $no_telp,
 						'bapak_suami' 		=> $bapak_suami,
@@ -46,11 +45,12 @@ class Register extends CI_Controller {
 						'suku_istri'		=> $suku_istri,
 						'link_photo'		=> $data['full_path']
 					);
-			//if not upload photo
+			
+			// if not upload photo
 			if ( ! $this->upload->do_upload('userfile')){
 	 			$data['link_photo'] = 'nothing';
 	 		}
-
+			
 	 		//if radio button is other input
 			if ( $jorong_suami == 'other_this' ) {
 				$data['jorong_suami'] = $jorong_suami_other;
@@ -84,6 +84,8 @@ class Register extends CI_Controller {
 				}
 				if (!empty($anak5) ) {
 					$rs = $this->register_model->insert_anak( $result, $anak5 );
+				}if (!empty($anak6) ) {
+					$rs = $this->register_model->insert_anak( $result, $anak6 );
 				}
 			}
 			

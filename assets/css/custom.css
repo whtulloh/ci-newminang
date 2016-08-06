@@ -1,1 +1,70 @@
 /* Add here all your css styles (customizations) */
+html {
+  background:url(minang.JPG) no-repeat center center fixed !important; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  height:100% !important;
+  display: block;
+}
+
+body, .wrapper{
+	background: none !important;
+}
+
+.sky-form header {
+	font-size: 25px;
+	padding: 15px 30px;
+	font-weight: bold;
+	background : rgba(72,72,72,0.6);
+	color: #fff !important;
+	border-bottom: none;
+}
+
+.sky-form .input input, .sky-form .select select, .sky-form .textarea textarea, .sky-form .radio i, .sky-form .checkbox i, .sky-form .toggle i, .sky-form .icon-append, .sky-form .icon-prepend {
+    border-color: #fff !important;
+}
+
+.sky-form .input input, .sky-form .select select, .sky-form .textarea textarea{	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sky-form fieldset {
+	background: rgba(72,72,72,0.6);
+}
+
+.sky-form fieldset + fieldset {
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.sky-form {
+    box-shadow: none;
+    border: none !important;
+}
+
+.sky-form footer {
+    background: rgba(72,72,72,0.6);
+	border: none;
+}
+
+.sky-form .label,
+.sky-form .inline-group .radio, .sky-form .inline-group .checkbox {
+	color: #fff !important;
+}
+
+.btn-u {
+	border: 3px solid #fff;
+}
+
+.sky-form .radio input, .sky-form .checkbox input, .sky-form .icon-append, .sky-form .icon-prepend, .sky-form .input  input, .sky-form .textarea textarea{
+	color: #3c3c3c;
+	font-size: 16px;
+}
+
+.sky-form .input-file .button {
+    height: 32px;
+    top: 5px;
+    right: 5px;
+}

@@ -1,577 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buku Tamu Halal Bihalal Padang Gantiang 2016</title>
 
-    <title> Buku Tamu Halal Bihalal Padang Gantiang 2016 </title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Web Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
 
-    <!-- Bootstrap core CSS -->
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css">
 
-    <link href="<?php echo base_url();?>/asset/layout/css/bootstrap.min.css" rel="stylesheet">
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/headers/header-default.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/footers/footer-v1.css">
 
-    <link href="<?php echo base_url();?>/asset/layout/fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?php echo base_url();?>/asset/layout/css/animate.min.css" rel="stylesheet">
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
-    <!-- Custom styling plus plugins -->
-    <link href="<?php echo base_url();?>/asset/layout/css/custom.css" rel="stylesheet">
-    <link href="<?php echo base_url();?>/asset/layout/css/icheck/flat/green.css" rel="stylesheet">
-    <!-- editor -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-    <link href="<?php echo base_url();?>/asset/layout/css/editor/external/google-code-prettify/prettify.css" rel="stylesheet">
-    <link href="<?php echo base_url();?>/asset/layout/css/editor/index.css" rel="stylesheet">
-    <!-- select2 -->
-    <link href="<?php echo base_url();?>/asset/layout/css/select/select2.min.css" rel="stylesheet">
-    <!-- switchery -->
-    <link rel="stylesheet" href="<?php echo base_url();?>/asset/layout/css/switchery/switchery.min.css" />
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/theme-skins/dark.css">
 
-    <script src="<?php echo base_url();?>/asset/layout/js/jquery.min.js"></script>
-
-    <!--[if lt IE 9]>
-        <script src="../asset/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/custom.css">
+	
 </head>
 
-
-<body class="nav-md">
-
-    <div class="container body">
-
-
-        <div class="main_container">
-
-            <!-- page content -->
-            <div class="right_col" role="main">
-                <div class="">
-
-                    <div class="clearfix"></div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                    <h2>Buku Tamu Halal Bihalal Padang Gantiang 2016</h2>
-                                    
-                                    <div class="clearfix"></div>
-                                </div>
-							</div>
-                            <div class="x_content">
-                                <br />
-                                <?php
-                                    if( isset($flashdata) ) {
-                                ?>
-                                    <div class="alert alert-success alert-dismissible fade in" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
-                                        </button>
-                                        <strong>Registraion</strong><?php echo $flashdata; ?>
-                                    </div>
-                                <?php } ?>
-                                <br />
-                                <?php if(isset($error) ) { echo $error; } ?>
-                                <?php echo form_open_multipart('register/api_reg', array('id' => 'demo-form2', 'class' => 'form-horizontal form-label-left') ) ?>
-                                <!-- <form method="POST" action="<?php echo site_url('register/api_reg') ;?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left"> -->
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nama Suami <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="first-name" name="nama_suami"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nama Istri <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="nama_istri"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jumlah Anak <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="jml_anak"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-3"></div>
-                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 1<span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-5 col-sm-5">
-                                            <input type="text" id="last-name" name="anak1"  class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-3"></div>
-                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 2<span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-5 col-sm-5">
-                                            <input type="text" id="last-name" name="anak2"  class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-3"></div>
-                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 3<span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-5 col-sm-5">
-                                            <input type="text" id="last-name" name="anak3"  class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-3"></div>
-                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 4<span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-5 col-sm-5">
-                                            <input type="text" id="last-name" name="anak4"  class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-3"></div>
-                                        <label class="control-label col-md-1 col-sm-1" for="last-name">Anak 5<span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-5 col-sm-5">
-                                            <input type="text" id="last-name" name="anak5"  class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Alamat <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="alamat"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">No Telephone <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="no_telp"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Suami <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="bapak_suami"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Ibu Dari Suami <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="ibu_suami"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="bapak_istri"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Bapak Dari Istri <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="last-name" name="ibu_istri"  class="form-control col-md-7 col-xs-12">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jorong Suami <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_suami" value="Koto Alam"> Koto Alam
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_suami" value="Koto Gadang"> Koto Gadang
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_suami" value="Koto Gadang Hilir"> Koto Gadang Hilir
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_suami" value=""> Rajo Dani
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <div class="col-md-1"><input type="radio" class="flat" name="jorong_suami" value="other_this" ></div>
-                                                    <div class="col-md-11">
-                                                        <input type="text" id="last-name" name="jorong_suami_other"  class="form-control col-md-7 col-xs-12" >
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jorong Istri <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_istri" value="Koto Alam"> Koto Alam
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_istri" value="Koto Gadang"> Koto Gadang
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_istri" value="Koto Gadang Hilir"> Koto Gadang Hilir
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="jorong_istri" value="Rajo Dani"> Rajo Dani
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <div class="col-md-1"><input type="radio" class="flat" name="jorong_istri" value="other_this"></div>
-                                                    <div class="col-md-11">
-                                                        <input type="text" id="last-name" name="jorong_istri_other"  class="form-control col-md-7 col-xs-12">
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Suku Suami <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_suami" value="Chaniago"> Chaniago
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_suami" value="Sembilan"> Sembilan
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_suami" value="Kutianyir"> Kutianyir
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_suami" value="Tujuh"> Tujuh
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_suami" value="Rajo Dani"> Rajo Dani
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <div class="col-md-1"><input type="radio" class="flat" name="suku_suami" value="other_this"></div>
-                                                    <div class="col-md-11">
-                                                        <input type="text" id="last-name" name="suku_suami_other"  class="form-control col-md-7 col-xs-12">
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Suku Istri <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_istri" value="Chaniago"> Chaniago
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_istri" value="Sembilan"> Sembilan
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_istri" value="Kutianyir"> Kutianyir
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_istri" value="Tujuh"> Tujuh
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="flat" name="suku_istri" value="Rajo Dani"> Rajo Dani
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <div class="col-md-1"><input type="radio" class="flat" name="suku_istri" value="other_this"></div>
-                                                    <div class="col-md-11">
-                                                        <input type="text" id="last-name" name="suku_istri_other"  class="form-control col-md-7 col-xs-12">
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Foto <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="file" id="last-name" name="userfile"  >
-                                        </div>
-                                    </div>
-
-                                    <div class="ln_solid"></div>
-                                    <div class="form-group">
-                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                            <input type="submit" name="submiten" class="btn btn-success" value="Submit">
-                                        </div>
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
+<body>
+	<div class="wrapper">
+		<!--=== Content Part ===-->
+		<div class="container content">
+			<div class="row">
+				<!-- Begin Content -->
+				<div class="col-md-12">
+					<!-- Checkout-Form -->
+				<?php
+                    if( isset($flashdata) ) {
+                ?>
+                    <div class="alert alert-success alert-dismissible fade in" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <strong>Registrasi</strong><?php echo $flashdata; ?>
                     </div>
+                <?php } ?>
+                    <br />
+                <?php if(isset($error) ) { echo $error; } ?>
+					<?php echo form_open_multipart('register/api_reg', array('id' => 'sky-form', 'class' => 'sky-form') ) ?>
+					<!--form action="#" id="sky-form" class="sky-form"-->
+						<header style="text-align:center;"><br /><b>Buku Tamu Halal Bihalal Padang Gantiang 2016</br></header>
 
-                    <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('#birthday').daterangepicker({
-                                singleDatePicker: true,
-                                calender_style: "picker_4"
-                            }, function (start, end, label) {
-                                console.log(start.toISOString(), end.toISOString(), label);
-                            });
-                        });
-                    </script>
-                </div>
-                <!-- /page content -->
+						<fieldset>
+							<div class="row">
+								<section class="col col-6">
+									<label class="input">
+										<i class="icon-prepend fa fa-male"></i>
+										<input type="text" name="nama_suami" placeholder="Nama Suami">
+									</label>
+								</section>
+								<section class="col col-6">
+									<label class="input">
+										<i class="icon-append fa fa-female"></i>
+										<input type="text" name="nama_istri" placeholder="Nama Istri">
+									</label>
+								</section>
+							</div>
+						</fieldset>
 
-            </div>
+						<fieldset>
+							<div class="row">
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak1" placeholder="Nama Anak 1">
+									</label>
+								</section>
 
-        </div>
-    </div>
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak2" placeholder="Nama Anak 2">
+									</label>
+								</section>
 
-        <div id="custom_notifications" class="custom-notifications dsp_none">
-            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
-            </ul>
-            <div class="clearfix"></div>
-            <div id="notif-group" class="tabbed_notifications"></div>
-        </div>
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak3" placeholder="Nama Anak 3">
+									</label>
+								</section>
+							</div>
 
-        <script src="<?php echo base_url();?>/asset/layout/js/bootstrap.min.js"></script>
+							<div class="row">
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak4" placeholder="Nama Anak 4">
+									</label>
+								</section>
 
-        <!-- chart js -->
-        <script src="<?php echo base_url();?>/asset/layout/js/chartjs/chart.min.js"></script>
-        <!-- bootstrap progress js -->
-        <script src="<?php echo base_url();?>/asset/layout/js/progressbar/bootstrap-progressbar.min.js"></script>
-        <script src="<?php echo base_url();?>/asset/layout/js/nicescroll/jquery.nicescroll.min.js"></script>
-        <!-- icheck -->
-        <script src="<?php echo base_url();?>/asset/layout/js/icheck/icheck.min.js"></script>
-        <!-- tags -->
-        <script src="<?php echo base_url();?>/asset/layout/js/tags/jquery.tagsinput.min.js"></script>
-        <!-- switchery -->
-        <script src="<?php echo base_url();?>/asset/layout/js/switchery/switchery.min.js"></script>
-        <!-- daterangepicker -->
-        <script type="text/javascript" src="<?php echo base_url();?>/asset/layout/js/moment.min2.js"></script>
-        <script type="text/javascript" src="<?php echo base_url();?>/asset/layout/js/datepicker/daterangepicker.js"></script>
-        <!-- richtext editor -->
-        <script src="<?php echo base_url();?>/asset/layout/js/editor/bootstrap-wysiwyg.js"></script>
-        <script src="<?php echo base_url();?>/asset/layout/js/editor/external/jquery.hotkeys.js"></script>
-        <script src="<?php echo base_url();?>/asset/layout/js/editor/external/google-code-prettify/prettify.js"></script>
-        <!-- select2 -->
-        <script src="<?php echo base_url();?>/asset/layout/js/select/select2.full.js"></script>
-        <!-- form validation -->
-        <script type="text/javascript" src="<?php echo base_url();?>/asset/layout/js/parsley/parsley.min.js"></script>
-        <!-- textarea resize -->
-        <script src="<?php echo base_url();?>/asset/layout/js/textarea/autosize.min.js"></script>
-        <script>
-            autosize($('.resizable_textarea'));
-        </script>
-        <!-- Autocomplete -->
-        <script type="text/javascript" src="<?php echo base_url();?>/asset/layout/js/autocomplete/countries.js"></script>
-        <script src="<?php echo base_url();?>/asset/layout/js/autocomplete/jquery.autocomplete.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                'use strict';
-                var countriesArray = $.map(countries, function (value, key) {
-                    return {
-                        value: value,
-                        data: key
-                    };
-                });
-                // Initialize autocomplete with custom appendTo:
-                $('#autocomplete-custom-append').autocomplete({
-                    lookup: countriesArray,
-                    appendTo: '#autocomplete-container'
-                });
-            });
-        </script>
-        <script src="<?php echo base_url();?>/asset/layout/js/custom.js"></script>
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak5" placeholder="Nama Anak 5">
+									</label>
+								</section>
+								
+								<section class="col col-4">
+									<label class="input">
+										<i class="icon-prepend fa fa-child"></i>
+										<input type="text" name="anak6" placeholder="Nama Anak 6">
+									</label>
+								</section>
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							<section>
+								<label class="textarea">
+									<textarea rows="3" name="alamat" placeholder="Alamat"></textarea>
+								</label>
+							</section>
+							
+							<div class="row">
+								<section class="col col-5">
+									<label class="input">
+										<i class="icon-prepend fa fa-exclamation-circle"></i>
+										<input type="text" name="kota" placeholder="Kota">
+									</label>
+								</section>
 
+								<section class="col col-7">
+									<label class="input">
+										<i class="icon-append fa fa-phone"></i>
+										<input type="text" name="no_telp" placeholder="No Telp">
+									</label>
+								</section>
+							</div>
+						</fieldset>
 
-        <!-- select2 -->
-        <script>
-            $(document).ready(function () {
-                $(".select2_single").select2({
-                    placeholder: "Select a state",
-                    allowClear: true
-                });
-                $(".select2_group").select2({});
-                $(".select2_multiple").select2({
-                    maximumSelectionLength: 4,
-                    placeholder: "With Max Selection limit 4",
-                    allowClear: true
-                });
-            });
-        </script>
-        <!-- /select2 -->
-        <!-- input tags -->
-        <script>
-            function onAddTag(tag) {
-                alert("Added a tag: " + tag);
-            }
+						<fieldset>
+							<div class="row">
+								<section class="col col-6">
+									<label class="input">
+										<i class="icon-prepend fa fa-male"></i>
+										<input type="text" name="bapak_suami" placeholder="Nama Bapak dari Suami">
+									</label>
+								</section>
+								<section class="col col-6">
+									<label class="input">
+										<i class="icon-append fa fa-female"></i>
+										<input type="text" name="ibu_suami" placeholder="Nama Ibu dari Suami">
+									</label>
+								</section>
+							</div>
+							
+							<div class="row">
+								<section class="col col-6">
+									<label class="input">
+										<i class="icon-prepend fa fa-male"></i>
+										<input type="text" name="bapak_istri" placeholder="Nama Ibu dari Istri">
+									</label>
+								</section>
+								<section class="col col-6">
+									<label class="input">
+										<i class="icon-append fa fa-female"></i>
+										<input type="text" name="ibu_istri" placeholder="Nama Ibu dari Istri">
+									</label>
+								</section>
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							<div class="row">
+								<section class="col col-6">
+									<label class="label" style="font-size:125%"><b>Jorong Suami</b></label>
+									<div class="inline-group">
+										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Alam" checked><i class="rounded-x"></i>Koto Alam</label>
+										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Gadang"><i class="rounded-x"></i>Koto Gadang</label>
+										<label class="radio"><input type="radio" name="jorong_suami" value="Koto Gadang Hilir"><i class="rounded-x"></i>Koto Gadang Hilir</label>
+										<label class="radio"><input type="radio" name="jorong_suami" value="Rajo Dani"><i class="rounded-x"></i>Rajo Dani</label>
+										<label class="radio"><input type="radio" name="jorong_suami" value="other_this" id="jorong_suami_other_this"><i class="rounded-x"></i></label>
+										<label class="input col col-7" style="margin-left: -8%;">
+											<input type="text" name="jorong_suami_other" placeholder="Lainnya" onclick="document.getElementById('jorong_suami_other_this').checked = true">
+										</label>
+									</div>
+								</section>
+								
+								<section class="col col-6">
+									<label class="label" style="font-size:125%"><b>Jorong Istri</b></label>
+									<div class="inline-group">
+										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Alam" checked><i class="rounded-x"></i>Koto Alam</label>
+										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Gadang"><i class="rounded-x"></i>Koto Gadang</label>
+										<label class="radio"><input type="radio" name="jorong_istri" value="Koto Gadang Hilir"><i class="rounded-x"></i>Koto Gadang Hilir</label>
+										<label class="radio"><input type="radio" name="jorong_istri" value="Rajo Dani"><i class="rounded-x"></i>Rajo Dani</label>
+										<label class="radio"><input type="radio" name="jorong_istri" value="other_this" id="jorong_istri_other_this"><i class="rounded-x"></i></label>
+										<label class="input col col-7" style="margin-left: -8%;">
+											<input type="text" name="jorong_istri_other" placeholder="Lainnya" onclick="document.getElementById('jorong_istri_other_this').checked = true">
+										</label>
+									</div>
+								</section>
+							</div>
 
-            function onRemoveTag(tag) {
-                alert("Removed a tag: " + tag);
-            }
+							<div class="row">
+								<section class="col col-6">
+									<label class="label" style="font-size:125%"><b>Suku Suami</b></label>
+									<div class="inline-group">
+										<label class="radio"><input type="radio" name="suku_suami" value="Chaniago" checked><i class="rounded-x"></i>Chaniago</label>
+										<label class="radio"><input type="radio" name="suku_suami" value="Sembilan"><i class="rounded-x"></i>Sembilan</label>
+										<label class="radio"><input type="radio" name="suku_suami" value="Kutianyir"><i class="rounded-x"></i>Kutianyir</label>
+										<label class="radio"><input type="radio" name="suku_suami" value="Tujuh"><i class="rounded-x"></i>Tujuh</label>
+										<label class="radio"><input type="radio" name="suku_suami" value="Rajo Dani"><i class="rounded-x"></i>Rajo Dani</label>
+										<label class="radio"><input type="radio" name="suku_suami" value="other_this" id="suku_suami_other_this"><i class="rounded-x"></i></label>
+										<label class="input col col-7" style="margin-left: -8%;">
+											<input type="text" name="suku_suami_other" placeholder="Lainnya" onclick="document.getElementById('suku_suami_other_this').checked = true">
+										</label>
+									</div>
+								</section>
+								
+								<section class="col col-6">
+									<label class="label" style="font-size:125%"><b>Suku Istri</b></label>
+									<div class="inline-group">
+										<label class="radio"><input type="radio" name="suku_istri" value="Chaniago" checked><i class="rounded-x"></i>Chaniago</label>
+										<label class="radio"><input type="radio" name="suku_istri" value="Sembilan"><i class="rounded-x"></i>Sembilan</label>
+										<label class="radio"><input type="radio" name="suku_istri" value="Kutianyir"><i class="rounded-x"></i>Kutianyir</label>
+										<label class="radio"><input type="radio" name="suku_istri" value="Tujuh"><i class="rounded-x"></i>Tujuh</label>
+										<label class="radio"><input type="radio" name="suku_istri" value="Rajo Dani"><i class="rounded-x"></i>Rajo Dani</label>
+										<label class="radio"><input type="radio" name="suku_istri" value="other_this" id="suku_istri_other_this"><i class="rounded-x"></i></label>
+										<label class="input col col-7" style="margin-left: -8%;">
+											<input type="text" name="suku_istri_other" placeholder="Lainnya" onclick="document.getElementById('suku_istri_other_this').checked = true">
+										</label>
+									</div>
+								</section>
+							</div>
+						</fieldset>
 
-            function onChangeTag(input, tag) {
-                alert("Changed a tag: " + tag);
-            }
+						<fieldset>
+							<section>
+								<label for="file" class="input input-file">
+									<div class="button"><input type="file" name="userfile" onchange="this.parentNode.nextSibling.value = this.value">Browse</div><input type="text" placeholder="Upload Photo" readonly>
+								</label>
+							</section>
+						</fieldset>
+						
+						<footer>
+							
+							<br/>
+							<section>
+								<input type="submit" class="btn-u col-11" value="simpan" name="submiten" style="margin:0 auto; float:none; display:block; font-size:160%"/>
+							</section>
+							<br/>
+							
+						</footer>
+					</form>
+					<!-- End Checkout-Form --> 
+					<div class="margin-bottom-40"></div>
+				</div>
+				<!-- End Content -->
+			</div>
+		</div><!--/container-->
+		<!--=== End Content Part ===-->
+	</div><!--/End Wrapepr-->
 
-            $(function () {
-                $('#tags_1').tagsInput({
-                    width: 'auto'
-                });
-            });
-        </script>
-        <!-- /input tags -->
-        <!-- form validation -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $.listen('parsley:field:validate', function () {
-                    validateFront();
-                });
-                $('#demo-form .btn').on('click', function () {
-                    $('#demo-form').parsley().validate();
-                    validateFront();
-                });
-                var validateFront = function () {
-                    if (true === $('#demo-form').parsley().isValid()) {
-                        $('.bs-callout-info').removeClass('hidden');
-                        $('.bs-callout-warning').addClass('hidden');
-                    } else {
-                        $('.bs-callout-info').addClass('hidden');
-                        $('.bs-callout-warning').removeClass('hidden');
-                    }
-                };
-            });
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/plugins/smoothScroll.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/app.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/forms/order.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/forms/review.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/forms/checkout.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>/assets/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			OrderForm.initOrderForm();
+			ReviewForm.initReviewForm();
+			CheckoutForm.initCheckoutForm();
+			StyleSwitcher.initStyleSwitcher();
+		});
+	</script>
+<!--[if lt IE 9]>
+	<script src="<?php echo base_url();?>/assets/plugins/respond.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/html5shiv.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="<?php echo base_url();?>/assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+	<![endif]-->
 
-            $(document).ready(function () {
-                $.listen('parsley:field:validate', function () {
-                    validateFront();
-                });
-                $('#demo-form2 .btn').on('click', function () {
-                    $('#demo-form2').parsley().validate();
-                    validateFront();
-                });
-                var validateFront = function () {
-                    if (true === $('#demo-form2').parsley().isValid()) {
-                        $('.bs-callout-info').removeClass('hidden');
-                        $('.bs-callout-warning').addClass('hidden');
-                    } else {
-                        $('.bs-callout-info').addClass('hidden');
-                        $('.bs-callout-warning').removeClass('hidden');
-                    }
-                };
-            });
-            try {
-                hljs.initHighlightingOnLoad();
-            } catch (err) {}
-        </script>
-        <!-- /form validation -->
-        <!-- editor -->
-        <script>
-            $(document).ready(function () {
-                $('.xcxc').click(function () {
-                    $('#descr').val($('#editor').html());
-                });
-            });
+<!--[if lt IE 10]>
+	<script src="<?php echo base_url();?>/assets/plugins/sky-forms/version-2.0.1/js/jquery.placeholder.min.js"></script>
+	<![endif]-->
 
-            $(function () {
-                function initToolbarBootstrapBindings() {
-                    var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
-                'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
-                'Times New Roman', 'Verdana'],
-                        fontTarget = $('[title=Font]').siblings('.dropdown-menu');
-                    $.each(fonts, function (idx, fontName) {
-                        fontTarget.append($('<li><a data-edit="fontName ' + fontName + '" style="font-family:\'' + fontName + '\'">' + fontName + '</a></li>'));
-                    });
-                    $('a[title]').tooltip({
-                        container: 'body'
-                    });
-                    $('.dropdown-menu input').click(function () {
-                            return false;
-                        })
-                        .change(function () {
-                            $(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');
-                        })
-                        .keydown('esc', function () {
-                            this.value = '';
-                            $(this).change();
-                        });
-
-                    $('[data-role=magic-overlay]').each(function () {
-                        var overlay = $(this),
-                            target = $(overlay.data('target'));
-                        overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
-                    });
-                    if ("onwebkitspeechchange" in document.createElement("input")) {
-                        var editorOffset = $('#editor').offset();
-                        $('#voiceBtn').css('position', 'absolute').offset({
-                            top: editorOffset.top,
-                            left: editorOffset.left + $('#editor').innerWidth() - 35
-                        });
-                    } else {
-                        $('#voiceBtn').hide();
-                    }
-                };
-
-                function showErrorAlert(reason, detail) {
-                    var msg = '';
-                    if (reason === 'unsupported-file-type') {
-                        msg = "Unsupported format " + detail;
-                    } else {
-                        console.log("error uploading file", reason, detail);
-                    }
-                    $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>' +
-                        '<strong>File upload error</strong> ' + msg + ' </div>').prependTo('#alerts');
-                };
-                initToolbarBootstrapBindings();
-                $('#editor').wysiwyg({
-                    fileUploadError: showErrorAlert
-                });
-                window.prettyPrint && prettyPrint();
-            });
-        </script>
-        <!-- /editor -->
 </body>
-
 </html>
