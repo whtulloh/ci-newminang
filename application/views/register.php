@@ -47,6 +47,7 @@
 				<div class="col-md-12">
 					<!-- Checkout-Form -->
 				<?php
+					$flashdata=$this->session->flashdata('message');
                     if( isset($flashdata) ) {
                 ?>
                     <div class="alert alert-success alert-dismissible fade in" role="alert">
@@ -193,7 +194,7 @@
 								<section class="col col-6">
 									<label class="input">
 										<i class="icon-prepend fa fa-male"></i>
-										<input type="text" name="bapak_istri" placeholder="Nama Ibu dari Istri">
+										<input type="text" name="bapak_istri" placeholder="Nama Bapak dari Istri">
 									</label>
 								</section>
 								<section class="col col-6">

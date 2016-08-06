@@ -20,14 +20,22 @@ class Register extends CI_Controller {
 		}else{
 			$config['upload_path'] = 'assets/image/';
 			$config['allowed_types'] = 'gif|jpg|png';
-			$config['max_size']	= '1000';
-			$config['max_width']  = '1024';
-			$config['max_height']  = '1024';
-
+			$config['max_size']	= '10000';
+			$config['max_width']  = '2048';
+			$config['max_height']  = '2048';
+			
 			$this->load->library('upload', $config);
-			//$error = array('error' => $this->upload->display_errors());
-			$data = $this->upload->data();
- 
+
+			if ( !$this->upload->do_upload('userfile'))
+                {
+                    $photo = 'nothing';
+                }
+                else
+                {
+                    $data = array('upload_data' => $this->upload->data());
+					$photo = $config['upload_path'].$data['upload_data']['file_name'];
+                }
+			
 			extract($_POST);
 			$data = array(
 						'id_peserta' 		=> '',
@@ -39,29 +47,24 @@ class Register extends CI_Controller {
 						'ibu_suami'			=> $ibu_suami,
 						'bapak_istri'		=> $bapak_istri,
 						'ibu_istri'			=> $ibu_istri,
-						'jorong_suami'		=> $jorong_suami,
-						'jorong_istri'		=> $jorong_istri,
-						'suku_suami'		=> $suku_suami,
-						'suku_istri'		=> $suku_istri,
-						'link_photo'		=> $data['full_path']
+						'jorong_suami'		=> (!empty($jorong_suami) ? $jorong_suami : ''),
+						'jorong_istri'		=> (!empty($jorong_istri) ? $jorong_istri : ''),
+						'suku_suami'		=> (!empty($suku_suami) ? $suku_suami : ''),
+						'suku_istri'		=> (!empty($suku_istri) ? $suku_istri : ''),
+						'link_photo'		=> $photo
 					);
 			
-			// if not upload photo
-			if ( ! $this->upload->do_upload('userfile')){
-	 			$data['link_photo'] = 'nothing';
-	 		}
-			
 	 		//if radio button is other input
-			if ( $jorong_suami == 'other_this' ) {
+			if ( !empty($jorong_suami) && $jorong_suami == 'other_this') {
 				$data['jorong_suami'] = $jorong_suami_other;
 			}
-			if ( $jorong_istri == 'other_this' ) {
+			if ( !empty($jorong_istri) && $jorong_istri == 'other_this' ) {
 				$data['jorong_istri'] = $jorong_istri_other;
 			}
-			if ( $suku_suami == 'other_this' ) {
+			if ( !empty($suku_suami) && $suku_suami == 'other_this' ) {
 				$data['suku_suami'] = $suku_suami_other;
 			}
-			if ( $suku_istri == 'other_this' ) {
+			if ( !empty($suku_istri) && $suku_istri == 'other_this' ) {
 				$data['suku_istri'] = $suku_istri_other;
 			}
 
@@ -96,11 +99,15 @@ class Register extends CI_Controller {
 			}
 			
 			if ( $reg_data == TRUE) {
-				$param = array('flashdata' => ' Success !!', );
+				// $param = array('flashdata' => ' Success !!', );
+				$this->session->set_flashdata('message', ' Success !!');
+				redirect(site_url('/'), 'refresh');
 			}else{
-				$param = array('flashdata' => ' Failed !!', );
+				// $param = array('flashdata' => ' Failed !!', );
+				$this->session->set_flashdata('message', ' Failed !!');
+				redirect(site_url('/'), 'refresh');
 			}
-			$this->load->view("register", $param );
+			// $this->load->view("register", $param );
 		}
 	}
 
